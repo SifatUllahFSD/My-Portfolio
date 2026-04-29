@@ -1,26 +1,124 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.container{
+  @apply max-w-7xl mx-auto ;
+} 
+.ul,li,Link {
+  @apply text-[#FFFFFF]
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.ul,li,Link {
+  @apply text-[#FFFFFF]
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --font-lato: "Lato", sans-serif;
+}
+
+/* body {
+background-image: linear-gradient(to right, #000000, #111111, #1b1b1d, #242628, #2d3132, #2e3435, #2f3637, #30393a, #293337, #252d34, #232731, #23202b);
+}  */
+
+  /* body {
+  background: radial-gradient(circle at 20% 30%, #1f1c2c, transparent 40%),
+              radial-gradient(circle at 80% 20%, #00c9ff, transparent 40%),
+              radial-gradient(circle at 70% 80%, #92fe9d, transparent 40%),
+              radial-gradient(circle at 30% 70%, #5f2c82, transparent 40%),
+              #000000;
+  background-size: 200% 200%;
+  animation: moveGradient 12s ease infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}  */
+
+
+/* body {
+  background: radial-gradient(circle at 20% 30%, rgba(174,168,207,0.10), transparent 40%),
+              radial-gradient(circle at 80% 20%, rgba(174,168,207,0.08), transparent 40%),
+              radial-gradient(circle at 70% 80%, rgba(174,168,207,0.06), transparent 40%),
+              radial-gradient(circle at 30% 70%, rgba(174,168,207,0.08), transparent 40%),
+              #2c2c2c;
+  background-size: 200% 200%;
+  animation: moveGradient 12s ease infinite;
+} */
+
+/* body {
+  background: radial-gradient(circle at 20% 30%, rgba(174,168,207,0.15), transparent 40%),
+              radial-gradient(circle at 80% 20%, rgba(174,168,207,0.12), transparent 40%),
+              radial-gradient(circle at 70% 80%, rgba(174,168,207,0.10), transparent 40%),
+              radial-gradient(circle at 30% 70%, rgba(174,168,207,0.12), transparent 40%),
+              #2c2c2c;
+  background-size: 200% 200%;
+  animation: moveGradient 12s ease infinite;
+} */
+
+/* body {
+  background: radial-gradient(circle at 25% 35%, rgba(174,168,207,0.08), transparent 50%),
+              radial-gradient(circle at 75% 65%, rgba(174,168,207,0.08), transparent 50%),
+              #2c2c2c;
+  background-size: 200% 200%;
+  animation: moveGradient 14s ease infinite;
+} */
+
+body {
+  background: radial-gradient(circle at center, rgba(174,168,207,0.12), transparent 60%),
+              #2c2c2c;
+  background-size: 200% 200%;
+  animation: moveGradient 12s ease infinite;
+}
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.menu ul li a {
+    @apply font-lato text-[#959595] text-[20px] font-medium duration-300
+}
+.menu ul li a:hover {
+    @apply text-[rgb(93,85,210)] font-bold 
+}
+.cv:hover {
+    @apply text-[rgb(93,85,210)] font-bold 
+}
+.social div {
+    @apply w-10 h-10 border border-[#575757] rounded-[50%] flex items-center justify-center
+}
+
+.react-tabs__tab--selected {
+    color: #fff!important;
+    border-color: none!important;
+    border: none!important;
+    border-radius: 8px!important;
+    padding: 0!important;
+}
+
+.react-tabs__tab--selected {
+    @apply !bg-linear-to-r from-[#FD6F00] to-[#E46400] !rounded-lg
+}
+.react-tabs__tab {
+    padding: 0!important; 
+
+}
+.react-tabs__tab:focus:after {
+    display: none!important;
+
+}
+.react-tabs__tab-list {
+    border-bottom: none!important;
 }
